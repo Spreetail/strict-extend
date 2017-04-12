@@ -30,7 +30,7 @@ function strictAssign() {
 
     if (isArray(target)) {
         strippedTarget = [];
-        assignArgs = [].concat([], sources);
+        assignArgs = [].concat([[]], sources);
     } else {
         strippedTarget = {};
         assignArgs = [].concat({}, sources);
