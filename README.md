@@ -7,7 +7,7 @@ but any properties on the target argument that aren't on any of the source argum
 Useful for filling in defaults for options parameters.
 
 ## Installation
-This package is available on npm as `strict-extend`.
+This package is available on [npm](https://www.npmjs.com/package/strict-extend) as `strict-extend`.
 ```
 npm install strict-extend
 ```
@@ -87,7 +87,7 @@ console.log(strictExtend(null, {})); // {}
 
 # Development
 ## Install
-1. Clone the repository
+1. Clone the [repository](https://github.com/Spreetail/strict-extend).
 2. Run `npm install` in the directory you cloned into.
 
 ## Tests
