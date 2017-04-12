@@ -85,16 +85,16 @@ console.log(strictExtend({}, null )); // {}
 console.log(strictExtend(null, {})); // {}
 ```
 
-# Development
-## Install
+## Development
+### Install
 1. Clone the [repository](https://github.com/Spreetail/strict-extend).
 2. Run `npm install` in the directory you cloned into.
 
-## Tests
+### Tests
 `npm test` assumes you have Chrome and Firefox installed.
 If that is not the case, you can run `npm run test-ci` to only run tests with [PhantomJS](http://phantomjs.org/) (which is a dev dependency).
 Or, you can run the tests and specify which browsers you'd like to test with using the `--browsers` option with `karma start`.
 For example, to test only with Firefox, you can run `karma start --browsers Firefox`.
 
-# License
+## License
 Licensed under the [MIT License](https://opensource.org/licenses/MIT).
