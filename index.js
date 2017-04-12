@@ -13,13 +13,28 @@ function objectsHaveOwnKey() {
     return objects.every(hasOwnKey.bind(null, key));
 }
 
+function isArray(object) {
+    if (typeof Array.isArray === 'function'){
+        return Array.isArray(object);
+    }
+    return object.toString() === '[object Array]';
+}
+
 function strictAssign() {
     var target = arguments[0],
         sources = [].slice.call(arguments, 1),
-        assignArgs = [].concat({}, sources),
+        assignArgs,
+        strippedTarget,
         i,
-        key,
-        strippedTarget;
+        key;
+
+    if (isArray(target)) {
+        strippedTarget = [];
+        assignArgs = [].concat([], sources);
+    } else {
+        strippedTarget = {};
+        assignArgs = [].concat({}, sources);
+    }
 
     sources.forEach(function stripTarget(source) {
         for (key in source) {
