@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Spreetail/strict-extend.git"
+    "url": "git+https://github.com/Spreetail/strict-assign.git"
   },
   "keywords": [
     "assign",
@@ -23,9 +23,9 @@
   "author": "Alex Bainter <alex.bainter@spreetail.com> (https://github.com/metalex9)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Spreetail/strict-extend/issues"
+    "url": "https://github.com/Spreetail/strict-assign/issues"
   },
-  "homepage": "https://github.com/Spreetail/strict-extend#readme",
+  "homepage": "https://github.com/Spreetail/strict-assign#readme",
   "dependencies": {
     "object.assign": "^4.0.4"
   },
