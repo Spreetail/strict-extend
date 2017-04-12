@@ -20,7 +20,7 @@ function isArray(object) {
     return object.toString() === '[object Array]';
 }
 
-function strictAssign() {
+function strictExtend() {
     var target = arguments[0],
         sources = [].slice.call(arguments, 1),
         assignArgs,
@@ -49,4 +49,4 @@ function strictAssign() {
     return assign.apply(null, assignArgs);
 }
 
-module.exports = strictAssign;
+module.exports = strictExtend;
