@@ -24,7 +24,7 @@ function strictAssign() {
     sources.forEach(function stripTarget(source) {
         for (key in source) {
             if (objectsHaveOwnKey(key, source, target)
-                && !hasOwnKey(key, strippedTarget) {
+                && !hasOwnKey(key, strippedTarget)) {
                 strippedTarget[key] = target[key];
             }
         }
