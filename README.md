@@ -4,7 +4,7 @@ A shallow extend method that removes extra properties from the target object.
 Inspired by [jQuery's `.extend()`](https://api.jquery.com/jquery.extend/) and
 [`Object.assign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign),
 but any properties on the target argument that aren't on any of the source arguments will be removed.
-Useful for filling in defaults for an options parameter.
+Useful for filling in defaults for options parameters.
 
 ## Installation
 This package is available on npm as `strict-extend`.
@@ -75,7 +75,7 @@ console.log(strictExtend(target, source1, source2));
 //  notice 'removed' from target not copied
 ```
 
-#### Null/Undefined Behavior
+#### `null`/`undefined` Behavior
 ```javascript
 import strictExtend from 'strict-extend';
 console.log(strictExtend()); // {}
@@ -84,6 +84,17 @@ console.log(strictExtend(null, null)); // {}
 console.log(strictExtend({}, null )); // {}
 console.log(strictExtend(null, {})); // {}
 ```
+
+# Development
+## Install
+1. Clone the repository
+2. Run `npm install` in the directory you cloned into.
+
+## Tests
+`npm test` assumes you have Chrome and Firefox installed.
+If that is not the case, you can run `npm run test-ci` to only run tests with [PhantomJS](http://phantomjs.org/) (which is a dev dependency).
+Or, you can run the tests and specify which browsers you'd like to test with using the `--browsers` option with `karma start`.
+For example, to test only with Firefox, you can run `karma start --browsers Firefox`.
 
 # License
 Licensed under the [MIT License](https://opensource.org/licenses/MIT).
