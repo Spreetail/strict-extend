@@ -1,6 +1,6 @@
 {
   "name": "strict-extend",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A shallow extend method that removes extra properties from the target object.",
   "main": "index.js",
   "scripts": {
@@ -47,6 +47,6 @@
     "watchify": "^3.9.0"
   },
   "engines": {
-      "node": ">= 4"
+    "node": ">= 4"
   }
 }
