@@ -45,5 +45,8 @@
     "phantomjs-prebuilt": "^2.1.14",
     "requirejs": "^2.3.3",
     "watchify": "^3.9.0"
+  },
+  "engines": {
+      "node": ">= 4"
   }
 }
