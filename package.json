@@ -33,7 +33,7 @@
   "devDependencies": {
     "browserify": "^14.3.0",
     "chai": "^3.5.0",
-    "karma": "^1.6.0",
+    "karma": "^4.2.0",
     "karma-browserify": "^5.1.1",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^2.0.0",
@@ -44,7 +44,7 @@
     "mocha": "^3.2.0",
     "phantomjs-prebuilt": "^2.1.14",
     "requirejs": "^2.3.3",
-    "watchify": "^3.9.0"
+    "watchify": "^4.0.0"
   },
   "engines": {
     "node": ">= 4"
